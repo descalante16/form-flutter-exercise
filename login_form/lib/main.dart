@@ -4,29 +4,16 @@ void main() {
   runApp(MainPage());
 }
 
-class MainPage extends StatefulWidget {
-  const MainPage({super.key});
-
-  @override
-  State<MainPage> createState() => _MainPageState();
-}
-
-class _MainPageState extends State<MainPage> {
+class MainPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(debugShowCheckedModeBanner: false, home: FirstPage());
   }
 }
 
-class FirstPage extends StatefulWidget {
-  const FirstPage({super.key});
-
-  @override
-  State<FirstPage> createState() => _FirstPageState();
-}
-
-class _FirstPageState extends State<FirstPage> {
+class FirstPage extends StatelessWidget {
   final emailController = TextEditingController();
+
   final passwordController = TextEditingController();
 
   @override
