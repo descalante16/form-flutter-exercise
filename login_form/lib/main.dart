@@ -49,7 +49,7 @@ class _FirstPageState extends State<FirstPage> {
       body: Form(
         child: ListView(padding: EdgeInsets.all(40), children: [
           Text(
-            'Log in',
+            'Welcome Back!',
             style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             textAlign: TextAlign.center,
           ),
@@ -80,7 +80,7 @@ class _FirstPageState extends State<FirstPage> {
                 print(passwordController.text);
               },
               child: Text(
-                'Submit',
+                'LOG IN',
                 style: TextStyle(
                   color: Colors.black,
                   fontWeight: FontWeight.w400,
